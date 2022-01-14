@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="aids-gov_20170513T020021.txt">
+    <annotation>
+        <mention id="EHOST_Instance_1922" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="416" end="421" />
+        <spannedText>won't</spannedText>
+        <creationDate>Tue Jan 11 17:00:01 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1922">
+        <mentionClass id="NegCue">won't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1923" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="896" end="898" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 17:00:14 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1923">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1924" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="873" end="875" />
+        <spannedText>No</spannedText>
+        <creationDate>Tue Jan 11 17:00:16 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1924">
+        <mentionClass id="NegCue">No</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0" />
+        <Adjudication_Selected_Classes version="1.0" />
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>false</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+

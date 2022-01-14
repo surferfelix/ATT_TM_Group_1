@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="Activist-Post_20170704T090503.txt">
+    <annotation>
+        <mention id="EHOST_Instance_3576" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="529" end="532" />
+        <spannedText>Not</spannedText>
+        <creationDate>Wed Jan 12 02:56:39 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3576">
+        <mentionClass id="NegCue">Not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3577" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="1304" end="1307" />
+        <spannedText>not</spannedText>
+        <creationDate>Wed Jan 12 02:57:40 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3577">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3578" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="1763" end="1778" />
+        <spannedText>ineffectiveness</spannedText>
+        <creationDate>Wed Jan 12 02:58:18 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3578">
+        <mentionClass id="NegCue">ineffectiveness</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3579" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="4059" end="4069" />
+        <spannedText>incomplete</spannedText>
+        <creationDate>Wed Jan 12 03:01:23 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3579">
+        <mentionClass id="NegCue">incomplete</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3580" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="4193" end="4196" />
+        <spannedText>not</spannedText>
+        <creationDate>Wed Jan 12 03:01:38 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3580">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3581" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5302" end="5305" />
+        <spannedText>not</spannedText>
+        <creationDate>Wed Jan 12 03:03:30 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3581">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3582" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5344" end="5347" />
+        <spannedText>not</spannedText>
+        <creationDate>Wed Jan 12 03:03:35 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3582">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3583" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="6758" end="6765" />
+        <spannedText>canâ€™t</spannedText>
+        <creationDate>Wed Jan 12 03:05:48 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3583">
+        <mentionClass id="NegCue">canâ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3584" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="6827" end="6830" />
+        <spannedText>nor</spannedText>
+        <creationDate>Wed Jan 12 03:06:00 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3584">
+        <mentionClass id="NegCue">nor</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3585" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="6716" end="6719" />
+        <spannedText>not</spannedText>
+        <creationDate>Thu Jan 13 11:20:28 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3585">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3586" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="81" end="95" />
+        <spannedText>non-vaccinated</spannedText>
+        <creationDate>Thu Jan 13 12:35:57 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3586">
+        <mentionClass id="NegCue">non-vaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3587" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="231" end="245" />
+        <spannedText>non-vaccinated</spannedText>
+        <creationDate>Thu Jan 13 12:36:04 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3587">
+        <mentionClass id="NegCue">non-vaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3588" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="612" end="629" />
+        <spannedText>or non-vaccinated</spannedText>
+        <creationDate>Thu Jan 13 12:36:12 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3588">
+        <mentionClass id="NegCue">or non-vaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3589" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="2228" end="2231" />
+        <spannedText>not</spannedText>
+        <creationDate>Thu Jan 13 12:36:29 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3589">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3590" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5031" end="5033" />
+        <spannedText>no</spannedText>
+        <creationDate>Thu Jan 13 12:36:50 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3590">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3591" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5226" end="5228" />
+        <spannedText>No</spannedText>
+        <creationDate>Thu Jan 13 12:36:53 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3591">
+        <mentionClass id="NegCue">No</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3592" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5403" end="5421" />
+        <spannedText>non-evidence-based</spannedText>
+        <creationDate>Thu Jan 13 12:37:02 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3592">
+        <mentionClass id="NegCue">non-evidence-based</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_3593" />
+        <annotator id="eHOST_2010">Mira</annotator>
+        <span start="5590" end="5602" />
+        <spannedText>anti-vaccine</spannedText>
+        <creationDate>Thu Jan 13 12:37:13 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_3593">
+        <mentionClass id="NegCue">anti-vaccine</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0" />
+        <Adjudication_Selected_Classes version="1.0" />
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>false</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+

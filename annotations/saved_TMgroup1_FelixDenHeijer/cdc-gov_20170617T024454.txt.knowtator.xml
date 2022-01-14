@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="cdc-gov_20170617T024454.txt">
+    <annotation>
+        <mention id="EHOST_Instance_625" />
+        <annotator id="eHOST_2010">Extensible_Human_Oracle_Suite_of_Tools</annotator>
+        <span start="266" end="278" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 17:46:38 AST 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_625">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_626" />
+        <annotator id="eHOST_2010">Extensible_Human_Oracle_Suite_of_Tools</annotator>
+        <span start="1926" end="1935" />
+        <spannedText>uninsured</spannedText>
+        <creationDate>Tue Jan 11 17:47:51 AST 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_626">
+        <mentionClass id="NegCue">uninsured</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0" />
+        <Adjudication_Selected_Classes version="1.0" />
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>false</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+

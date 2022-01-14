@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="Atlas-Monitor_20160703T084322.txt">
+    <annotation>
+        <mention id="EHOST_Instance_1925" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="45" end="48" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 17:01:45 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1925">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1926" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="556" end="568" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 17:02:07 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1926">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1927" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="585" end="591" />
+        <spannedText>cannot</spannedText>
+        <creationDate>Tue Jan 11 17:02:11 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1927">
+        <mentionClass id="NegCue">cannot</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1928" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="795" end="808" />
+        <spannedText>Unfortunately</spannedText>
+        <creationDate>Tue Jan 11 17:02:21 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1928">
+        <mentionClass id="NegCue">Unfortunately</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0" />
+        <Adjudication_Selected_Classes version="1.0" />
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>false</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+
