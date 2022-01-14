@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="cdc-gov_20170617T024454.txt">
+    <annotation>
+        <mention id="EHOST_Instance_9259" />
+        <annotator id="eHOST_2010">Elena</annotator>
+        <span start="266" end="278" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 18:20:40 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_9259">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_9260" />
+        <annotator id="eHOST_2010">Elena</annotator>
+        <span start="1932" end="1941" />
+        <spannedText>uninsured</spannedText>
+        <creationDate>Tue Jan 11 18:22:57 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_9260">
+        <mentionClass id="NegCue">uninsured</mentionClass>
+    </classMention>
+    <adjudicating>
+        <mention id="EHOST_Instance_9261" />
+        <annotator id="eHOST_2010">Elena</annotator>
+        <span start="266" end="278" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 18:20:40 CET 2022</creationDate>
+        <processed>true</processed>
+        <AdjudicationStatus>NON_MATCHES</AdjudicationStatus>
+    </adjudicating>
+    <classMention id="EHOST_Instance_9261">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <adjudicating>
+        <mention id="EHOST_Instance_9262" />
+        <annotator id="eHOST_2010">Elena</annotator>
+        <span start="1932" end="1941" />
+        <spannedText>uninsured</spannedText>
+        <creationDate>Tue Jan 11 18:22:57 CET 2022</creationDate>
+        <processed>true</processed>
+        <AdjudicationStatus>NON_MATCHES</AdjudicationStatus>
+    </adjudicating>
+    <classMention id="EHOST_Instance_9262">
+        <mentionClass id="NegCue">uninsured</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0">
+            <Annotator>Elena</Annotator>
+            <Annotator>Mira</Annotator>
+            <Annotator>Konstantina</Annotator>
+            <Annotator>ADJUDICATION</Annotator>
+        </Adjudication_Selected_Annotators>
+        <Adjudication_Selected_Classes version="1.0">
+            <Class>NegCue</Class>
+        </Adjudication_Selected_Classes>
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>true</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+

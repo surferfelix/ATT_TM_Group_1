@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations textSource="AGE-OF-AUTISM_20170620T044415.txt">
+    <annotation>
+        <mention id="EHOST_Instance_1815" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="489" end="503" />
+        <spannedText>non-infectious</spannedText>
+        <creationDate>Tue Jan 11 16:13:41 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1815">
+        <mentionClass id="NegCue">non-infectious</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1816" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="1330" end="1336" />
+        <spannedText>or not</spannedText>
+        <creationDate>Tue Jan 11 16:14:26 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1816">
+        <mentionClass id="NegCue">or not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1817" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="3187" end="3193" />
+        <spannedText>aren't</spannedText>
+        <creationDate>Tue Jan 11 16:16:18 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1817">
+        <mentionClass id="NegCue">aren't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1818" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="5185" end="5192" />
+        <span start="5199" end="5202" />
+        <spannedText>neither ... nor</spannedText>
+        <creationDate>Tue Jan 11 16:18:10 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1818">
+        <mentionClass id="NegCue">neither ... nor</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1819" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="5603" end="5610" />
+        <spannedText>isnβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:18:39 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1819">
+        <mentionClass id="NegCue">isnβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1820" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="5638" end="5653" />
+        <spannedText>ineffectiveness</spannedText>
+        <creationDate>Tue Jan 11 16:18:43 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1820">
+        <mentionClass id="NegCue">ineffectiveness</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1821" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="7678" end="7683" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:20:11 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1821">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1822" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="8904" end="8910" />
+        <spannedText>unable</spannedText>
+        <creationDate>Tue Jan 11 16:20:40 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1822">
+        <mentionClass id="NegCue">unable</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1823" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="9376" end="9379" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:21:08 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1823">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1824" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="9384" end="9396" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:21:12 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1824">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1825" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="9461" end="9471" />
+        <spannedText>unsanitary</spannedText>
+        <creationDate>Tue Jan 11 16:21:20 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1825">
+        <mentionClass id="NegCue">unsanitary</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1826" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10029" end="10034" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:21:47 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1826">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1827" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10153" end="10156" />
+        <spannedText>don</spannedText>
+        <creationDate>Tue Jan 11 16:21:53 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1827">
+        <mentionClass id="NegCue">don</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1828" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10153" end="10158" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:22:05 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1828">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1829" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10273" end="10278" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:22:19 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1829">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1830" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10869" end="10872" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:23:52 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1830">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1831" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10910" end="10918" />
+        <spannedText>not with</spannedText>
+        <creationDate>Tue Jan 11 16:23:59 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1831">
+        <mentionClass id="NegCue">not with</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1832" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="11177" end="11186" />
+        <spannedText>no longer</spannedText>
+        <creationDate>Tue Jan 11 16:24:07 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1832">
+        <mentionClass id="NegCue">no longer</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1833" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="11199" end="11202" />
+        <spannedText>nor</spannedText>
+        <creationDate>Tue Jan 11 16:24:11 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1833">
+        <mentionClass id="NegCue">nor</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1834" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="11389" end="11397" />
+        <spannedText>not even</spannedText>
+        <creationDate>Tue Jan 11 16:24:18 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1834">
+        <mentionClass id="NegCue">not even</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1835" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="11644" end="11651" />
+        <span start="11657" end="11660" />
+        <spannedText>neither ... nor</spannedText>
+        <creationDate>Tue Jan 11 16:24:32 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1835">
+        <mentionClass id="NegCue">neither ... nor</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1836" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="11676" end="11681" />
+        <spannedText>never</spannedText>
+        <creationDate>Tue Jan 11 16:24:39 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1836">
+        <mentionClass id="NegCue">never</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1837" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="12299" end="12306" />
+        <spannedText>weren't</spannedText>
+        <creationDate>Tue Jan 11 16:24:57 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1837">
+        <mentionClass id="NegCue">weren't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1838" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="13262" end="13269" />
+        <spannedText>without</spannedText>
+        <creationDate>Tue Jan 11 16:25:29 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1838">
+        <mentionClass id="NegCue">without</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1839" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="14325" end="14330" />
+        <spannedText>can't</spannedText>
+        <creationDate>Tue Jan 11 16:25:49 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1839">
+        <mentionClass id="NegCue">can't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1840" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15406" end="15411" />
+        <spannedText>can't</spannedText>
+        <creationDate>Tue Jan 11 16:26:41 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1840">
+        <mentionClass id="NegCue">can't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1841" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15762" end="15767" />
+        <span start="15673" end="15680" />
+        <spannedText>haven't ... can't</spannedText>
+        <creationDate>Tue Jan 11 16:26:50 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1841">
+        <mentionClass id="NegCue">haven't ... can't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1842" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15840" end="15847" />
+        <spannedText>haven't</spannedText>
+        <creationDate>Tue Jan 11 16:27:01 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1842">
+        <mentionClass id="NegCue">haven't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1843" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15898" end="15905" />
+        <spannedText>canβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:27:06 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1843">
+        <mentionClass id="NegCue">canβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1844" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15919" end="15927" />
+        <spannedText>arenβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:27:10 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1844">
+        <mentionClass id="NegCue">arenβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1845" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15993" end="16000" />
+        <spannedText>wonβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:27:15 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1845">
+        <mentionClass id="NegCue">wonβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1846" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="17027" end="17032" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:27:52 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1846">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1847" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="17364" end="17369" />
+        <spannedText>Don't</spannedText>
+        <creationDate>Tue Jan 11 16:28:03 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1847">
+        <mentionClass id="NegCue">Don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1848" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="18506" end="18511" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:28:35 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1848">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1849" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="18432" end="18438" />
+        <spannedText>hadn't</spannedText>
+        <creationDate>Tue Jan 11 16:28:42 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1849">
+        <mentionClass id="NegCue">hadn't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1850" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="18755" end="18762" />
+        <spannedText>haven't</spannedText>
+        <creationDate>Tue Jan 11 16:28:47 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1850">
+        <mentionClass id="NegCue">haven't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1851" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="18793" end="18799" />
+        <spannedText>wasn't</spannedText>
+        <creationDate>Tue Jan 11 16:28:50 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1851">
+        <mentionClass id="NegCue">wasn't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1852" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="19068" end="19074" />
+        <spannedText>didn't</spannedText>
+        <creationDate>Tue Jan 11 16:28:59 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1852">
+        <mentionClass id="NegCue">didn't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1853" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="19114" end="19119" />
+        <spannedText>can't</spannedText>
+        <creationDate>Tue Jan 11 16:29:03 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1853">
+        <mentionClass id="NegCue">can't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1854" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="20404" end="20416" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:31:03 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1854">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1855" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="20894" end="20906" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:31:22 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1855">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1856" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="25590" end="25595" />
+        <spannedText>won't</spannedText>
+        <creationDate>Tue Jan 11 16:33:22 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1856">
+        <mentionClass id="NegCue">won't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1857" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="28099" end="28111" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:34:27 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1857">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1858" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="28082" end="28092" />
+        <spannedText>uninformed</spannedText>
+        <creationDate>Tue Jan 11 16:34:32 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1858">
+        <mentionClass id="NegCue">uninformed</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1859" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="28214" end="28226" />
+        <spannedText>UnVaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:34:41 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1859">
+        <mentionClass id="NegCue">UnVaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1860" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="29557" end="29564" />
+        <span start="30238" end="30246" />
+        <spannedText>doesn't ... unlikely</spannedText>
+        <creationDate>Tue Jan 11 16:35:03 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1860">
+        <mentionClass id="NegCue">doesn't ... unlikely</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1861" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="31607" end="31612" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:36:01 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1861">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1862" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="34872" end="34877" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:37:19 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1862">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1863" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="40921" end="40933" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:39:53 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1863">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1864" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="42495" end="42500" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:40:35 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1864">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1865" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="42601" end="42603" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:41:36 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1865">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1866" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="534" end="536" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:43:12 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1866">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1867" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="1262" end="1265" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:43:19 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1867">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1868" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="1271" end="1274" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:43:28 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1868">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1869" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="1885" end="1888" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:43:50 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1869">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1870" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="2619" end="2622" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:44:07 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1870">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1871" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="2653" end="2656" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:44:15 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1871">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1872" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="3299" end="3301" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:44:25 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1872">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1873" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="4122" end="4125" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:44:31 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1873">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1874" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="5203" end="5211" />
+        <spannedText>careless</spannedText>
+        <creationDate>Tue Jan 11 16:45:23 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1874">
+        <mentionClass id="NegCue">careless</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1875" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="6615" end="6618" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:45:46 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1875">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1876" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="8638" end="8641" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:45:52 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1876">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1877" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="8951" end="8953" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:46:09 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1877">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1878" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="9647" end="9652" />
+        <spannedText>in no</spannedText>
+        <creationDate>Tue Jan 11 16:46:21 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1878">
+        <mentionClass id="NegCue">in no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1879" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="10424" end="10427" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:46:28 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1879">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1880" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="13231" end="13234" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:46:54 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1880">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1881" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="14532" end="14534" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:47:05 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1881">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1882" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="15567" end="15572" />
+        <spannedText>don't</spannedText>
+        <creationDate>Tue Jan 11 16:47:21 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1882">
+        <mentionClass id="NegCue">don't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1883" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="16436" end="16439" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:47:31 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1883">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1884" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="17839" end="17848" />
+        <spannedText>no longer</spannedText>
+        <creationDate>Tue Jan 11 16:47:47 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1884">
+        <mentionClass id="NegCue">no longer</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1885" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="20789" end="20791" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:48:09 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1885">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1886" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="22270" end="22272" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:48:20 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1886">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1887" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="23141" end="23144" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:48:30 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1887">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1888" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="23342" end="23345" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:48:35 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1888">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1889" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="23896" end="23899" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:48:46 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1889">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1890" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="25681" end="25684" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:48:58 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1890">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1891" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="32973" end="32976" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:49:15 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1891">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1892" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="34249" end="34252" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:49:23 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1892">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1893" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="37091" end="37094" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:49:29 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1893">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1894" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="38220" end="38223" />
+        <spannedText>non</spannedText>
+        <creationDate>Tue Jan 11 16:49:59 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1894">
+        <mentionClass id="NegCue">non</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1895" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="38937" end="38942" />
+        <spannedText>does</spannedText>
+        <creationDate>Tue Jan 11 16:50:05 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1895">
+        <mentionClass id="NegCue">does</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1896" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="40322" end="40325" />
+        <spannedText>non</spannedText>
+        <creationDate>Tue Jan 11 16:50:10 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1896">
+        <mentionClass id="NegCue">non</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1897" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="40833" end="40836" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:50:17 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1897">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1898" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="41177" end="41180" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:50:23 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1898">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1899" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="41315" end="41327" />
+        <spannedText>UNVACCINATED</spannedText>
+        <creationDate>Tue Jan 11 16:50:25 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1899">
+        <mentionClass id="NegCue">UNVACCINATED</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1900" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="42045" end="42048" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:50:34 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1900">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1901" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="42923" end="42926" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:50:43 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1901">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1902" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="43020" end="43023" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:51:10 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1902">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1903" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="45841" end="45852" />
+        <spannedText>unavoidable</spannedText>
+        <creationDate>Tue Jan 11 16:52:00 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1903">
+        <mentionClass id="NegCue">unavoidable</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1904" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="46257" end="46264" />
+        <spannedText>donβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:52:17 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1904">
+        <mentionClass id="NegCue">donβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1905" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="46800" end="46813" />
+        <spannedText>UNADULTERATED</spannedText>
+        <creationDate>Tue Jan 11 16:52:31 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1905">
+        <mentionClass id="NegCue">UNADULTERATED</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1906" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="46942" end="46945" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:52:35 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1906">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1907" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="46876" end="46883" />
+        <spannedText>Donβ€™t</spannedText>
+        <creationDate>Tue Jan 11 16:52:38 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1907">
+        <mentionClass id="NegCue">Donβ€™t</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1908" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="47330" end="47337" />
+        <span start="47343" end="47346" />
+        <spannedText>neither ... nor</spannedText>
+        <creationDate>Tue Jan 11 16:52:52 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1908">
+        <mentionClass id="NegCue">neither ... nor</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1909" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="47638" end="47641" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:53:09 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1909">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1910" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="48799" end="48811" />
+        <spannedText>unvaccinated</spannedText>
+        <creationDate>Tue Jan 11 16:53:26 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1910">
+        <mentionClass id="NegCue">unvaccinated</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1911" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="49107" end="49122" />
+        <spannedText>ineffectiveness</spannedText>
+        <creationDate>Tue Jan 11 16:53:40 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1911">
+        <mentionClass id="NegCue">ineffectiveness</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1912" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="51715" end="51723" />
+        <spannedText>unlikely</spannedText>
+        <creationDate>Tue Jan 11 16:54:08 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1912">
+        <mentionClass id="NegCue">unlikely</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1913" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="52878" end="52887" />
+        <spannedText>no longer</spannedText>
+        <creationDate>Tue Jan 11 16:54:38 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1913">
+        <mentionClass id="NegCue">no longer</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1914" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="53025" end="53028" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:54:43 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1914">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1915" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="53465" end="53468" />
+        <spannedText>not</spannedText>
+        <creationDate>Tue Jan 11 16:54:54 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1915">
+        <mentionClass id="NegCue">not</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1916" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="53563" end="53573" />
+        <spannedText>unreported</spannedText>
+        <creationDate>Tue Jan 11 16:55:00 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1916">
+        <mentionClass id="NegCue">unreported</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1917" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="53948" end="53953" />
+        <spannedText>can't</spannedText>
+        <creationDate>Tue Jan 11 16:55:14 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1917">
+        <mentionClass id="NegCue">can't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1918" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="54099" end="54101" />
+        <spannedText>no</spannedText>
+        <creationDate>Tue Jan 11 16:55:20 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1918">
+        <mentionClass id="NegCue">no</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1919" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="54182" end="54188" />
+        <spannedText>hasn't</spannedText>
+        <creationDate>Tue Jan 11 16:55:25 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1919">
+        <mentionClass id="NegCue">hasn't</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1920" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="24347" end="24353" />
+        <spannedText>failed</spannedText>
+        <creationDate>Tue Jan 11 16:56:43 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1920">
+        <mentionClass id="NegCue">failed</mentionClass>
+    </classMention>
+    <annotation>
+        <mention id="EHOST_Instance_1921" />
+        <annotator id="eHOST_2010">Konstantina</annotator>
+        <span start="25423" end="25430" />
+        <spannedText>failing</spannedText>
+        <creationDate>Tue Jan 11 16:56:59 CET 2022</creationDate>
+    </annotation>
+    <classMention id="EHOST_Instance_1921">
+        <mentionClass id="NegCue">failing</mentionClass>
+    </classMention>
+    <eHOST_Adjudication_Status version="1.0">
+        <Adjudication_Selected_Annotators version="1.0" />
+        <Adjudication_Selected_Classes version="1.0" />
+        <Adjudication_Others>
+            <CHECK_OVERLAPPED_SPANS>false</CHECK_OVERLAPPED_SPANS>
+            <CHECK_ATTRIBUTES>false</CHECK_ATTRIBUTES>
+            <CHECK_RELATIONSHIP>false</CHECK_RELATIONSHIP>
+            <CHECK_CLASS>false</CHECK_CLASS>
+            <CHECK_COMMENT>false</CHECK_COMMENT>
+        </Adjudication_Others>
+    </eHOST_Adjudication_Status>
+</annotations>
+
