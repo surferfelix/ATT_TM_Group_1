@@ -1,5 +1,5 @@
 # System for Negation Cue Detection
-TM_Groupe_1
+TM_Group_1
 
 The project was carried out by Konstantina Andronikou, Felix den Heijer, Mira Reisinger and Elena Weber during the seminar ‘Applied Text Mining 1: Methods taught by Isa Maks.
 
