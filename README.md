@@ -37,6 +37,6 @@ The requirements to run the provided code can be found in **requirements.txt**.
 which model 
 
 ### Code
-The folder **Code** contains the following scripts and files: **NAME OF FILE AND SHORT DESCRIPTION WHAT IS HAPPENING**
+The folder **code** contains the following scripts and files: **NAME OF FILE AND SHORT DESCRIPTION WHAT IS HAPPENING**
 * `utils.py`
 * 
