@@ -35,7 +35,10 @@ tbd for Assignment 4
 The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
 
 ### Word Embeddings 
-which model 
+We used a pre-trained GloVe word-embedding model to represent our tokens as features. When using this project, make sure you have a GloVe pre-trained embedding model downloaded (txt not bin). Alternatively, you can use a Word2Vec based embedding model, with a quick work-around.
+
+#### Using a Word2Vec embedding model instead of GloVe
+Currently, this project takes a path to a pre-trained GloVe embedding model and converts this to a Word2Vec style model. This means that with a short workaround you can load a word2vec based model (txt not bin). All you need to do is rename the name of your word2vec based model to 'temp_glove_as_word2vec.txt', and put this in the models folder of a clone of this repository. 
 
 ### Code
 The folder **code** contains the following scripts and files: **NAME OF FILE AND SHORT DESCRIPTION WHAT IS HAPPENING**
