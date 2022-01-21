@@ -34,5 +34,7 @@ tbd
 The requirements to run the provided code can be found in **requirements.txt**.
 
 ### Word Embeddings 
+which model 
 
 ### Code
+name of files.py 
