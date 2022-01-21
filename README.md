@@ -28,7 +28,8 @@ Training Data:
 * `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
 
 Test data:
-tbd
+
+tbd for Assignment 4
 
 ### Prerequistes 
 The requirements to run the provided code can be found in **requirements.txt**.
