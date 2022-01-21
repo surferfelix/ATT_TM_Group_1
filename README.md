@@ -18,3 +18,12 @@ This folder contains annotations of 10 articles by 4 annotators. The corpus cons
 * `cdc-gov_20170618T093427.txt`
 
 All annotations were made with the eHost software, and all of the annotators except for annotator 4 (Felix) used the windows distribution of the software. Annotator 4 annotated with the Mac OS X distribution. This is relevant since these versions are not cross compatible.
+
+
+### Data
+
+### Prerequistes 
+
+### Word Embeddings 
+
+### Code
