@@ -22,6 +22,9 @@ All annotations were made with the eHost software, and all of the annotators exc
 
 ### Data
 
+* `SEM-2012-SharedTask-CD-SCO-dev-simple.v2.txt`
+* `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
+
 ### Prerequistes 
 
 ### Word Embeddings 
