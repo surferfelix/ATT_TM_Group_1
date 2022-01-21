@@ -1,0 +1,24 @@
+Requirements
+
+Python
+This research was done with Python 3.8. For reproducing the study we recommend using a similar 
+
+Python modules
+pip install pandas
+pip install nltk
+pip install spacy
+pip install argparse
+pip install os
+pip install gensim
+
+Latest versions (current date 21-01-2022)
+
+
+
+
+
+
+
+
+
+
