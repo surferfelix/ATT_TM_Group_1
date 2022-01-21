@@ -31,7 +31,7 @@ Test data:
 tbd
 
 ### Prerequistes 
-The requirements to run the code provided can be found in **requirements.txt**.
+The requirements to run the provided code can be found in **requirements.txt**.
 
 ### Word Embeddings 
 
