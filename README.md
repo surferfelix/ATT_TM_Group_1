@@ -6,6 +6,7 @@ The project was carried out by Konstantina Andronikou, Felix den Heijer, Mira Re
 ### Annotations
 This folder contains annotations of 10 articles by 4 annotators. The corpus consists of 5 articles by the CDC (Centers for Disease Control and Prevention USA) and 5 articles from different webpages. The annotations were made on the following txt files:
 
+* `dc-gov_20170703T010627.txt`
 * 21st-Century-Wire_20170627T181355.txt
 * Activist-Post_20170704T090503.txt
 * AGE-OF-AUTISM_20170620T044415.txt
