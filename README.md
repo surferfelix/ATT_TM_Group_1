@@ -32,7 +32,7 @@ Test data:
 tbd for Assignment 4
 
 ### Prerequistes 
-The requirements to run the provided code can be found in **requirements.txt**.
+The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
 
 ### Word Embeddings 
 which model 
