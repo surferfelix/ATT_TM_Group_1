@@ -21,9 +21,14 @@ All annotations were made with the eHost software, and all of the annotators exc
 
 
 ### Data
-
+Development Data:
 * `SEM-2012-SharedTask-CD-SCO-dev-simple.v2.txt`
+
+Training Data:
 * `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
+
+Test data:
+tbd
 
 ### Prerequistes 
 
