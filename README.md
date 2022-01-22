@@ -1,10 +1,10 @@
 # System for Negation Cue Detection
 TM_Group_1
 
-The project was carried out by Konstantina Andronikou, Felix den Heijer, Mira Reisinger and Elena Weber during the seminar ‘Applied Text Mining 1: Methods' taught by Isa Maks.
+The project was carried out by Konstantina Andronikou, Felix den Heijer, Mira Reisinger, and Elena Weber during the seminar ‘Applied Text Mining 1: Methods' taught by Isa Maks.
 
 ### Annotations
-The folder [**annotations**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/annotations) contains annotations of 10 articles created by 4 annotators. The corpus consists of 5 articles by the CDC (Centers for Disease Control and Prevention USA) and 5 articles from different webpages. The annotations were made on the following .txt files:
+The folder [**annotations**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/annotations) contains annotations of 10 articles created by 4 annotators. The corpus consists of 5 articles by the CDC (Centers for Disease Control and Prevention USA) and 5 articles from different web pages. The annotations were made on the following .txt files:
 
 * `21st-Century-Wire_20170627T181355.txt`
 * `Activist-Post_20170704T090503.txt`
@@ -17,7 +17,7 @@ The folder [**annotations**](https://github.com/surferfelix/ATT_TM_Group_1/tree/
 * `cdc-gov_20170617T195505.txt`
 * `cdc-gov_20170618T093427.txt`
 
-All annotations were made with the eHost software, and all of the annotators except for annotator 4 (Felix) used the windows distribution of the software. Annotator 4 annotated with the Mac OS X distribution. This is relevant since these versions are not cross compatible.
+All annotations were made with the eHost software, and all of the annotators except for annotator 4 (Felix) used the windows distribution of the software. Annotator 4 annotated with the Mac OS X distribution. This is relevant since these versions are not cross-compatible.
 
 
 ### Data
@@ -31,11 +31,11 @@ Test data:
 
 * tbd for Assignment 4
 
-### Prerequistes 
+### Prerequisites 
 The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
 
 ### Word Embeddings 
-We used a pre-trained GloVe word-embedding model to represent our tokens as features. When using this project, make sure you have a GloVe pre-trained embedding model downloaded (txt not bin). Alternatively, you can use a Word2Vec based embedding model, with a quick work-around.
+We used a pre-trained GloVe word-embedding model to represent our tokens as features. When using this project, make sure you have a GloVe pre-trained embedding model downloaded (txt not bin). Alternatively, you can use a Word2Vec based embedding model, with a quick workaround.
 
 #### Using a Word2Vec embedding model instead of GloVe
 Currently, this project takes a path to a pre-trained GloVe embedding model and converts this to a Word2Vec style model. This means that with a short workaround you can load a word2vec based model (txt not bin). All you need to do is rename the name of your word2vec based model to 'temp_glove_as_word2vec.txt', and put this in the models folder of a clone of this repository. 
