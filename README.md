@@ -41,6 +41,6 @@ We used a pre-trained GloVe word-embedding model to represent our tokens as feat
 Currently, this project takes a path to a pre-trained GloVe embedding model and converts this to a Word2Vec style model. This means that with a short workaround you can load a word2vec based model (txt not bin). All you need to do is rename the name of your word2vec based model to 'temp_glove_as_word2vec.txt', and put this in the models folder of a clone of this repository. 
 
 ### Code
-The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/code) contains the following scripts and files: **NAME OF FILE AND SHORT DESCRIPTION WHAT IS HAPPENING**
-* `utils.py`
-* `feature_extraction.py`
+The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/code) contains the following scripts and files: 
+* `utils.py` The script contains the functions for the feature extraction.
+* `feature_extraction.py` The script extracts the features token, lemma, POS, prefix negation expression, suffix negation expression, n-grams, and embeddings with the help of the features of utils.py. 
