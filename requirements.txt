@@ -11,14 +11,6 @@ pip install argparse
 pip install os
 pip install gensim
 
-Latest versions (current date 21-01-2022)
+Latest versions (current date 22-01-2022)
 
-
-
-
-
-
-
-
-
-
+For the Embeddings a folder called 'models' is necessary. 
