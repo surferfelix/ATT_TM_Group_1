@@ -43,4 +43,4 @@ Currently, this project takes a path to a pre-trained GloVe embedding model and 
 ### Code
 The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/code) contains the following scripts and files: 
 * `utils.py` The script contains the functions for the feature extraction.
-* `feature_extraction.py` The script extracts the features token, lemma, POS, prefix negation expression, suffix negation expression, n-grams, and embeddings with the help of the features of utils.py. 
+* `feature_extraction.py` The script extracts the features token, lemma, POS, prefix negation expression, suffix negation expression, n-grams, and embeddings. 
