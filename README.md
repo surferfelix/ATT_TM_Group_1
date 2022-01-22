@@ -4,7 +4,7 @@ TM_Group_1
 The project was carried out by Konstantina Andronikou, Felix den Heijer, Mira Reisinger and Elena Weber during the seminar ‘Applied Text Mining 1: Methods' taught by Isa Maks.
 
 ### Annotations
-The folder [**annotations**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/annotations) contains annotations of 10 articles by 4 annotators. The corpus consists of 5 articles by the CDC (Centers for Disease Control and Prevention USA) and 5 articles from different webpages. The annotations were made on the following .txt files:
+The folder [**annotations**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/annotations) contains annotations of 10 articles created by 4 annotators. The corpus consists of 5 articles by the CDC (Centers for Disease Control and Prevention USA) and 5 articles from different webpages. The annotations were made on the following .txt files:
 
 * `21st-Century-Wire_20170627T181355.txt`
 * `Activist-Post_20170704T090503.txt`
@@ -29,7 +29,7 @@ Training Data:
 
 Test data:
 
-tbd for Assignment 4
+* tbd for Assignment 4
 
 ### Prerequistes 
 The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
