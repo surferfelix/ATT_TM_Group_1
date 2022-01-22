@@ -43,4 +43,4 @@ Currently, this project takes a path to a pre-trained GloVe embedding model and 
 ### Code
 The folder **code** contains the following scripts and files: **NAME OF FILE AND SHORT DESCRIPTION WHAT IS HAPPENING**
 * `utils.py`
-* 
+* `pipeline.py`
