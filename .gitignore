@@ -1,3 +1,5 @@
 # Ignore these files
-**/.DS_Store
+**.DS_Store
+**._.DS_Store
+**/.gitkeep
 
