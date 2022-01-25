@@ -183,7 +183,7 @@ if __name__ == "__main__":
         word_embedding_path = 'models/glove.42B.300d.txt'
     elif debug == True:
         word_embedding_path = ''
-    inputfile = "SEM_2012_dev+train/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
+    inputfile = "data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
     assert os.path.isfile(inputfile), 'Your path does not seem to be a file'
     main(inputfile, word_embedding_path, debug = debug)
 
