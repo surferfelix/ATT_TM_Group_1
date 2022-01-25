@@ -9,7 +9,7 @@ from gensim.scripts.glove2word2vec import glove2word2vec # We need to convert th
 
 def fileread(inputfile: str) -> tuple: 
     '''Opens and reads the file
-    :param inputfile: file to read as tsv
+    :param inputfile: filepath to read as tsv
     :type inputfile: string
     return: lists of column content )tokens, gold, chapters, sent_id
     '''
@@ -39,7 +39,7 @@ def tokens_to_embeddings(tokens: list, word_embedding_model) -> list:
         embedding_vectors.append(vector)
     return embedding_vectors
 
-def tokens_to_sentences(tokens: list, chapters: list, sent_id: list, sent_tokenizer = 'nltk') -> list:
+def tokens_to_sentences(tokens: list, chapters: list, sent_id: list, sent_tokenizer = None) -> list:
     '''This function takes tokens as input and will join them into sentences
     :param tokens: the tokens variable from the fileread function
     :param chapters: the chapters variable from the fileread function
@@ -103,11 +103,12 @@ def join_punctuation(seq: list, characters='.,;?!'):
 
     yield current
 
-def featuretraindict(tokens: list, gold: list, word_embedding_model) -> dict: # All features we want should be inputparameters. 
+def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = False, debug = False) -> dict: # All features we want should be inputparameters. 
     '''Adds the to use features in the system to a dictionary
     :param tokens: the tokens variable from fileread function
     :param gold: gold labels from fileread function
     :param word_embedding_model: A loaded word_embedding model
+    :param baseline: When set to True this will only use tokens as feature representations
     :type word_embedding_model: word2vec object
     :return: dictionary with features 
     '''
@@ -120,22 +121,39 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model) -> dict: # 
     neg_word = utils.neg_word(tokens, neg_list)
     word_bigrams = utils.word_ngram(tokens, 2)
     aff_neg = utils.affixal_neg(tokens)
+    prev_token, next_token = utils.prev_next_tokens(tokens)
 
     # Embedding_check
 
     # Continue implementation when we start vectorising to combine embeddings with one-hot token dimensions
     ## For now this is just to show that we also have embedding representations of tokens ready as a feature
-    emb_tokens = tokens_to_embeddings(tokens, word_embedding_model) 
+    if debug == False:
+        emb_tokens = tokens_to_embeddings(tokens, word_embedding_model) 
     
     # Featuredict
-    features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Gold": gold}
-    
+    if baseline == False: 
+        features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token, "Gold": gold}
+    else:
+        features = {'tokens': tokens,"lemmas": lemmas}
     # Test
-    assert all(len(f) == len(tokens) for f in features.values()), f'The features in the featuredict must be of identical length. Current lengths are:\n\n {print((len(f) for f in features.values()))}'
+    #assert all(len(f) == len(tokens) for f in features.values()), f'\n The features in the featuredict must be of identical length. Current lengths are:\n\n {print((len(f) for f in features.values()))}'
     return features
 
-# Pipeline is in here
-def main(inputpath: str, embedding_path: str):
+
+#### thats what i did for i spirat
+def feature_dict_to_csv(feature_dict):
+    df= pd.DataFrame(feature_dict)
+    df.to_csv('feature_dict.tsv', sep='\t', header = True) 
+
+def token_embeddings_pipe(inputfile, embeddingmodel)-> list:
+    '''This can be imported if you want to fetch the token representation of embeddings alone'''
+    tokens, gold, chapters, sent_id = fileread(inputfile)
+    emblist = tokens_to_embeddings(tokens, embeddingmodel)
+    return emblist
+
+
+# Main Pipeline is in here
+def main(inputpath: str, embedding_path: str, debug = False):
     print('Starting up the pipeline...\n')
     tokens, gold, chapters, sent_id = fileread(inputpath)
     print('Loading embedding model...\n')
@@ -143,18 +161,29 @@ def main(inputpath: str, embedding_path: str):
     tmp_file = 'models/temp_glove_as_word2vec.txt'
     if not os.path.isfile(tmp_file): #Checking if it exists so it only needs to convert once, saving time on second run
         glove2word2vec(glove_file, tmp_file)
-    language_model = KeyedVectors.load_word2vec_format(tmp_file)
+    if debug == False:
+        language_model = KeyedVectors.load_word2vec_format(tmp_file)
+    elif debug == True:
+        language_model= ''
     print('Converting tokens back to sentences...\n')
     sentences, complete_text = tokens_to_sentences(tokens, chapters, sent_id, sent_tokenizer = None)
     print('Adding the features to the dict\n')
-    featuretraindict(tokens, complete_text, gold, language_model)
+    features = featuretraindict(tokens, gold, language_model, baseline = False, debug = debug)
+    print('Create tsv of featuredict\n')
+    feature_dict_to_csv(features)
     print('End of current implementation')
     
 # Run
 if __name__ == "__main__":
     # Please add the correct path here
-    word_embedding_path = 'models/glove.42B.300d.txt'
+
+    debug = True #Are you debugging or not?
+
+    if debug == False:
+        word_embedding_path = 'models/glove.42B.300d.txt'
+    elif debug == True:
+        word_embedding_path = ''
     inputfile = "SEM_2012_dev+train/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
     assert os.path.isfile(inputfile), 'Your path does not seem to be a file'
-    main(inputfile, word_embedding_path)
+    main(inputfile, word_embedding_path, debug = debug)
 
