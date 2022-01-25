@@ -116,10 +116,11 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     neg_list = ['nor', 'neither', 'without', 'nobody', 'none', 'nothing', 'never', 'not', 'no', 'nowhere', 'non'] #Chowdhury
 
     # NLTK
+    tokens = tokens.tolist()
     pos_tags = utils.POS(tokens)
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
-    word_bigrams = utils.word_ngram(tokens, 2)
+    word_bigrams = utils.word_ngram(tokens, 2).tolist()
     aff_neg = utils.affixal_neg(tokens)
     prev_token, next_token = utils.prev_next_tokens(tokens)
 
@@ -132,7 +133,7 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     
     # Featuredict
     if baseline == False: 
-        features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token, "Gold": gold}
+        features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token} # Can add gold later?
     else:
         features = {'tokens': tokens,"lemmas": lemmas}
     # Test
@@ -159,7 +160,7 @@ def main(inputpath: str, embedding_path: str, debug = False):
     print('Loading embedding model...\n')
     glove_file = embedding_path # https://radimrehurek.com/gensim/scripts/glove2word2vec.html
     tmp_file = 'models/temp_glove_as_word2vec.txt'
-    if not os.path.isfile(tmp_file): #Checking if it exists so it only needs to convert once, saving time on second run
+    if not os.path.isfile(tmp_file) and debug == False: #Checking if it exists so it only needs to convert once, saving time on second run
         glove2word2vec(glove_file, tmp_file)
     if debug == False:
         language_model = KeyedVectors.load_word2vec_format(tmp_file)
@@ -183,7 +184,7 @@ if __name__ == "__main__":
         word_embedding_path = 'models/glove.42B.300d.txt'
     elif debug == True:
         word_embedding_path = ''
-    inputfile = "data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
+    inputfile = "/Volumes/Samsung_T5/Text_Mining/ATT/ATT_TM_Group_1/data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
     assert os.path.isfile(inputfile), 'Your path does not seem to be a file'
     main(inputfile, word_embedding_path, debug = debug)
 
