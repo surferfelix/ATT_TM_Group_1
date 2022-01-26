@@ -103,7 +103,7 @@ def join_punctuation(seq: list, characters='.,;?!'):
 
     yield current
 
-def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = False, debug = False) -> dict: # All features we want should be inputparameters. 
+def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = False, w_embedding = False) -> dict: # All features we want should be inputparameters. 
     '''Adds the to use features in the system to a dictionary
     :param tokens: the tokens variable from fileread function
     :param gold: gold labels from fileread function
@@ -128,7 +128,7 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
 
     # Continue implementation when we start vectorising to combine embeddings with one-hot token dimensions
     ## For now this is just to show that we also have embedding representations of tokens ready as a feature
-    if debug == False:
+    if w_embedding == False:
         emb_tokens = tokens_to_embeddings(tokens, word_embedding_model) 
     
     # Featuredict
@@ -154,22 +154,22 @@ def token_embeddings_pipe(inputfile, embeddingmodel)-> list:
 
 
 # Main Pipeline is in here
-def main(inputpath: str, embedding_path: str, debug = False):
+def main(inputpath: str, embedding_path: str, w_embedding = False):
     print('Starting up the pipeline...\n')
     tokens, gold, chapters, sent_id = fileread(inputpath)
     print('Loading embedding model...\n')
     glove_file = embedding_path # https://radimrehurek.com/gensim/scripts/glove2word2vec.html
     tmp_file = 'models/temp_glove_as_word2vec.txt'
-    if not os.path.isfile(tmp_file) and debug == False: #Checking if it exists so it only needs to convert once, saving time on second run
+    if not os.path.isfile(tmp_file) and w_embedding == False: #Checking if it exists so it only needs to convert once, saving time on second run
         glove2word2vec(glove_file, tmp_file)
-    if debug == False:
+    if w_embedding == False:
         language_model = KeyedVectors.load_word2vec_format(tmp_file)
-    elif debug == True:
+    elif w_embedding == True:
         language_model= ''
     print('Converting tokens back to sentences...\n')
     sentences, complete_text = tokens_to_sentences(tokens, chapters, sent_id, sent_tokenizer = None)
     print('Adding the features to the dict\n')
-    features = featuretraindict(tokens, gold, language_model, baseline = False, debug = debug)
+    features = featuretraindict(tokens, gold, language_model, baseline = False, w_embedding = w_embedding)
     print('Create tsv of featuredict\n')
     feature_dict_to_csv(features)
     print('End of current implementation')
@@ -178,13 +178,13 @@ def main(inputpath: str, embedding_path: str, debug = False):
 if __name__ == "__main__":
     # Please add the correct path here
 
-    debug = True #Are you debugging or not?
+    w_embedding = True #Are you w_embeddingging or not?
 
-    if debug == False:
+    if w_embedding == False:
         word_embedding_path = 'models/glove.42B.300d.txt'
-    elif debug == True:
+    elif w_embedding == True:
         word_embedding_path = ''
     inputfile = "/Volumes/Samsung_T5/Text_Mining/ATT/ATT_TM_Group_1/data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt"
     assert os.path.isfile(inputfile), 'Your path does not seem to be a file'
-    main(inputfile, word_embedding_path, debug = debug)
+    main(inputfile, word_embedding_path, w_embedding = w_embedding)
 
