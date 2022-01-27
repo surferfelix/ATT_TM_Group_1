@@ -128,14 +128,17 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
 
     # Continue implementation when we start vectorising to combine embeddings with one-hot token dimensions
     ## For now this is just to show that we also have embedding representations of tokens ready as a feature
-    if w_embedding == False:
+    if w_embedding == True:
         emb_tokens = tokens_to_embeddings(tokens, word_embedding_model) 
     
     # Featuredict
-    if baseline == False: 
+    if baseline == False and w_embedding == False: 
         features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token} # Can add gold later?
+    elif baseline == False and w_embedding == True:
+        features = {"Tokens": emb_tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token}
     else:
         features = {'tokens': tokens,"lemmas": lemmas}
+
     # Test
     #assert all(len(f) == len(tokens) for f in features.values()), f'\n The features in the featuredict must be of identical length. Current lengths are:\n\n {print((len(f) for f in features.values()))}'
     return features
