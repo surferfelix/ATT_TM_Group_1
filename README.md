@@ -27,10 +27,6 @@ Development Data:
 Training Data:
 * `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
 
-Test data:
-
-* tbd for Assignment 4
-
 ### Prerequisites 
 The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
 
