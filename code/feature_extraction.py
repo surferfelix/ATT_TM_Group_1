@@ -124,7 +124,7 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
     word_bigrams = utils.word_ngram(tokens, 2).tolist()
-    aff_neg = utils.affixAal_neg(tokens)
+    aff_neg = utils.affixal_neg(tokens)
     prev_token, next_token = utils.prev_next_tokens(tokens)
 
     # Embedding_check
