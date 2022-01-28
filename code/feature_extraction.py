@@ -116,12 +116,15 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     neg_list = ['nor', 'neither', 'without', 'nobody', 'none', 'nothing', 'never', 'not', 'no', 'nowhere', 'non'] #Chowdhury
 
     # NLTK
-    tokens = tokens.tolist()
+    try:
+        tokens = tokens.tolist()
+    except AttributeError: # Occurs when embedding is loaded instead of file
+        tokens = tokens
     pos_tags = utils.POS(tokens)
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
     word_bigrams = utils.word_ngram(tokens, 2).tolist()
-    aff_neg = utils.affixal_neg(tokens)
+    aff_neg = utils.affixAal_neg(tokens)
     prev_token, next_token = utils.prev_next_tokens(tokens)
 
     # Embedding_check
@@ -140,7 +143,7 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
         features = {'tokens': tokens,"lemmas": lemmas}
 
     # Test
-    #assert all(len(f) == len(tokens) for f in features.values()), f'\n The features in the featuredict must be of identical length. Current lengths are:\n\n {print((len(f) for f in features.values()))}'
+    assert all(len(f) == len(tokens) for f in features.values()), f'\n The features in the featuredict must be of identical length. Current lengths are:\n\n {print((len(f) for f in features.values()))}'
     return features
 
 
