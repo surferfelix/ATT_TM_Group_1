@@ -3,8 +3,6 @@ from nltk.stem import WordNetLemmatizer
 import argparse
 import pandas as pd
 
-# NLTK
-
 def wordnet_pos(pos: list) -> str:
     """
     Helper function for lemmas: converts nltk POS_tags to WordNet_tags
@@ -38,7 +36,8 @@ def lemma_extraction(tokens: list, pos_list: list) -> list:
         lemmas.append(lemma)
         
     return lemmas
-        
+ 
+    
 def POS(tokens:list) -> list:
     '''
     Function which creates list of POS-tags of tokens
@@ -52,6 +51,7 @@ def POS(tokens:list) -> list:
         
     return pos_list
 
+
 def word_ngram(tokens: list, n: int) -> list:
     '''
     This function generates n word ngrams
@@ -59,12 +59,12 @@ def word_ngram(tokens: list, n: int) -> list:
     :param n: number of tokens for n_gram
     :return: all possible ngrams
     '''
-    # code inspiration: https://towardsdatascience.com/from-dataframe-to-n-grams-e34e29df3460
-
+    
     word_grams= pd.Series(nltk.ngrams(tokens, n, pad_right = True))
     
     return word_grams
-    
+
+
 def neg_word(tokens: list, neg_list: list)-> list:
     '''
     This functions checks tokens against a list of negation words
@@ -131,8 +131,11 @@ def affixal_neg(tokens: list)-> list:
 
 
 def prev_next_tokens(tokens):
+    ''' This function creates previous and next token for each token
+    :param tokens: list of tokens
+    return: lists of previous and next tokens
+    '''
 
-    ### that would be my prev token:
     #starting index 
     t_index = 0
 
@@ -153,7 +156,7 @@ def prev_next_tokens(tokens):
         previous_token.append(prev_token)
 
         # next token one up
-        if next_index < len(tokens): # does that make sense? doesn't look a lot cleaner though ;)
+        if next_index < len(tokens): 
             nex_token = tokens[next_index]
         else:
             nex_token = ""
@@ -164,6 +167,8 @@ def prev_next_tokens(tokens):
 
     return previous_token, next_token
 
+
+### function to reconstruct sentences from tokens ###
 def tokens_to_sentences(tokens: list, chapters: list, sent_id: list, sent_tokenizer = None) -> list:
     '''This function takes tokens as input and will join them into sentences
     :param tokens: the tokens variable from the fileread function
@@ -211,9 +216,6 @@ def tokens_to_sentences(tokens: list, chapters: list, sent_id: list, sent_tokeni
 
 if __name__ == '__main__':
     test = ['this', 'is','n`t', 'a', 'test', 'list', 'of', 'tokens', '.', 'and', 'my', 'cat', 'has', 'been', 'well']
-    c, d = prev_next_tokens(test)
-   # a,b  = prev_token(test)
-    print(c,d)
     
 
 
