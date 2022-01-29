@@ -1,7 +1,7 @@
 Requirements
 
 Python
-This research was done with Python 3.8. For reproducing the study we recommend using a similar 
+This research was done with Python 3.8. For reproducing the study we recommend using a similar version. 
 
 Python modules
 pip install pandas
