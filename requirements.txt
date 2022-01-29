@@ -10,6 +10,9 @@ pip install spacy
 pip install argparse
 pip install os
 pip install gensim
+pip install sys
+pip install csv
+pip install os
 
 Latest versions (current date 22-01-2022)
 
