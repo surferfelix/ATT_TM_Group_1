@@ -136,7 +136,7 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     
     # Featuredict
     if baseline == False and w_embedding == False: 
-        features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token} # Can add gold later?
+        features = {"Tokens": tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token}
     elif baseline == False and w_embedding == True:
         features = {"Tokens": emb_tokens, "Lemmas": lemmas, "POS": pos_tags, "Neg_Word": neg_word, "Affixal_Neg": aff_neg, "Word_bigrams": word_bigrams, "Prev_Token": prev_token, "Next_Token": next_token}
     else:
@@ -147,11 +147,12 @@ def featuretraindict(tokens: list, gold: list, word_embedding_model, baseline = 
     return features
 
 
-#### thats what i did for i spirat
+### write out feature dict to tsv
 def feature_dict_to_csv(feature_dict):
     df= pd.DataFrame(feature_dict)
     df.to_csv('feature_dict.tsv', sep='\t', header = True) 
 
+### embeddings pipline
 def token_embeddings_pipe(inputfile, embeddingmodel)-> list:
     '''This can be imported if you want to fetch the token representation of embeddings alone'''
     tokens, gold, chapters, sent_id = fileread(inputfile)
