@@ -5,16 +5,17 @@ This research was done with Python 3.8. For reproducing the study we recommend u
 
 Python modules
 pip install pandas
+pip install numpy
 pip install nltk
-pip install spacy
 pip install argparse
 pip install os
 pip install gensim
 pip install sys
 pip install csv
-pip install os
 pip install sklearn
 
-Latest versions (current date 22-01-2022)
 
-For the Embeddings a folder called 'models' is necessary. 
+For the word embeddings a folder called 'models' is necessary. 
+Model used in this project: Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB download) download here: https://nlp.stanford.edu/projects/glove/
+
+Latest versions (current date 29-01-2022)
