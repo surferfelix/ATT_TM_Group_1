@@ -40,4 +40,4 @@ Currently, this project takes a path to a pre-trained GloVe embedding model and 
 The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/code) contains the following scripts and files: 
 * `utils.py` The script contains the functions for the feature extraction.
 * `feature_extraction.py` The script extracts the features token, lemma, POS, prefix negation expression, suffix negation expression, n-grams, and embeddings.
-* `evaluation.py` 
+* `evaluation.py` The script contains functions to create a confusion matrix, a heatmap of said confusion matrix, and an evaluation including precision, recall, and f-score. 
