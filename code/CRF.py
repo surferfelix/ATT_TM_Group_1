@@ -1,34 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[35]:
-
-
 import pandas as pd
 import numpy as np
 import nltk 
 import sys
 import csv
-nltk.download('averaged_perceptron_tagger')
 from nltk.stem import WordNetLemmatizer 
-nltk.download('wordnet')
-## import support vector machine / logreg 
-from sklearn.feature_extraction import DictVectorizer
-
-
-# In[8]:
-
 
 get_ipython().system("pip install 'sklearn<0.24'")
-
-
-# In[9]:
-
-
 get_ipython().system("pip install 'sklearn_crfsuite<0.24'")
-
-
-# In[10]:
 
 
 ## import CRF 
@@ -36,33 +14,17 @@ import sklearn
 import sklearn_crfsuite
 from sklearn_crfsuite import metrics
 
-
-# In[11]:
-
-
 import utils
 import feature_extraction as fe
-
-
-# In[12]:
 
 
 training_data = 'data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
 dev_data = 'data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
 
 
-# In[13]:
-
-
 # Reading the files
 tr_tokens, tr_gold, tr_chapters, tr_sent_id = fe.fileread(training_data)
 te_tokens, te_gold, te_chapters, te_sent_id = fe.fileread(dev_data)
-
-
-# 
-
-# In[14]:
-
 
 ## Here debug = True just means that I am not yet loading embeddings, therefore embedding_model param is empty string
 train_features = fe.featuretraindict(tr_tokens, tr_gold, '', baseline = False, w_embedding = True) # Dict
@@ -72,14 +34,8 @@ dev_features = fe.featuretraindict(te_tokens, te_gold, '', baseline = False, w_e
 dev_baseline = fe.featuretraindict(te_tokens, te_gold, '', baseline = True, w_embedding = True) # Dict
 
 
-# In[15]:
-
-
 sentences = [sent for sent in zip(tr_tokens,tr_gold,tr_sent_id)]
 #print(sentences) 
-
-
-# In[16]:
 
 
 def token2features(sentences, i):
@@ -100,8 +56,6 @@ def token2features(sentences, i):
     return features
 
 
-# In[17]:
-
 
 def sent2features(sent):
     return [token2features(sent, i) for i in range(len(sent))]
@@ -112,9 +66,6 @@ def sent2labels(sent):
 
 def sent2tokens(sent):
     return [token for token,pos_tags, lemmas, neg_word, aff_neg, prev_token, next_token, gold in sent]
-
-
-# In[18]:
 
 
 def extract_sents_from_conll(inputfile): # It gets 5 items from this func
@@ -173,16 +124,6 @@ def extract_sents_from_conll(inputfile): # It gets 5 items from this func
     return sentences
 
 
-# In[19]:
-
-
-a = extract_sents_from_conll('data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt')
-# for i in a:
-#   print(i)
-
-
-# In[28]:
-
 
 def train_crf_model(X_train, y_train):
 
@@ -198,9 +139,6 @@ def train_crf_model(X_train, y_train):
     return crf
 
 
-# In[29]:
-
-
 def create_crf_model(trainingfile):
 
     train_sents = extract_sents_from_conll(trainingfile)
@@ -212,8 +150,6 @@ def create_crf_model(trainingfile):
     return crf
 
 
-# In[30]:
-
 
 def run_crf_model(crf, evaluationfile):
 
@@ -223,8 +159,6 @@ def run_crf_model(crf, evaluationfile):
     
     return y_pred, X_test
 
-
-# In[31]:
 
 
 def write_out_evaluation(eval_data, pred_labels, outputfile):
@@ -236,16 +170,12 @@ def write_out_evaluation(eval_data, pred_labels, outputfile):
             outfile.write(data.get('Tokens') + "\t" + pred + "\n")
 
 
-# In[32]:
-
 
 def train_and_run_crf_model(trainingfile, evaluationfile, outputfile):
     crf = create_crf_model(trainingfile)
     pred_labels, eval_data = run_crf_model(crf, evaluationfile)
     write_out_evaluation(eval_data, pred_labels, outputfile)
 
-
-# In[36]:
 
 
 def main():
@@ -260,22 +190,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
