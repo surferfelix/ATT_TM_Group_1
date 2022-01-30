@@ -43,3 +43,4 @@ The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/co
 * `evaluation.py` The script contains functions to create a confusion matrix, a heatmap of said confusion matrix, and an evaluation including precision, recall, and f-score. 
 * `CRF.py` This script trains CRF classifier and creates tsv with token and predicted label.
 * `SVM_Emb.py` This script trains SVM classifier with all features and includes word embeddings. It creates tsv with token and predicted label. This script can also be used for Feature ablation study.
+* `evaluation_notebook.ipynb` The notebook extracts all basic evaluation results for both classifiers in all cases. 
