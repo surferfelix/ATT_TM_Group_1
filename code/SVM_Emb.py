@@ -1,20 +1,21 @@
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.svm import LinearSVC
-import pandas as pd
 import sys
-import csv 
 import gensim
 from gensim.scripts.glove2word2vec import glove2word2vec
 import os
 import numpy as np
 
 #These are files we created, can be cloned from https://github.com/surferfelix/ATT_TM_Group_1
-import utils
 import feature_extraction as fe
 
-def create_classifier(train_features, train_targets, modelname, embedded = False):
-   
-    if modelname == 'SVM':
+def create_classifier(train_features, train_targets: list, model_name = 'SVM', embedded = False) -> tuple:
+    '''
+    :param train_features: the vectorized features to use when training the targets
+    :param train_targets: list of gold labels to use for supervising the targets
+    :param model_name: This parameter currently only supports string SVM
+    :param embedded: Boolean, for embeddings should always be true'''
+    if model_name == 'SVM':
         model = LinearSVC(max_iter = 10000)
         
     if embedded == True:
@@ -27,13 +28,18 @@ def create_classifier(train_features, train_targets, modelname, embedded = False
    
     return model, vec
 
-def classify_data(model,vec,inputdata,outputfile,language_model,embedded =False):
-    features,gold = extract_features(inputdata, language_model= language_model, vectorizer = vec)
-
+def classify_data(model,vec,input_data,output_file: str,language_model,embedded =False):
+    '''
+    :param model: the trained model object
+    :param vec: contains a vectorizer to use for transformation
+    :param inputdata: test data for classification testing
+    :param output_file: path you with to write to
+    :return: writes a tsv file with path/name of outputfile string'''
+    features,gold = extract_features(input_data, language_model= language_model, vectorizer = vec)
     predictions = model.predict(features)
-    outfile = open(outputfile, 'w')
+    outfile = open(output_file, 'w')
     counter = 0
-    for index, line in enumerate(open(inputdata, 'r')):
+    for index, line in enumerate(open(input_data, 'r')):
         if index == 0:
             continue
         if len(line.rstrip('\n').split()) > 0:
@@ -41,14 +47,18 @@ def classify_data(model,vec,inputdata,outputfile,language_model,embedded =False)
                 outfile.write(line.rstrip('\n') + '\t' + predictions[counter] + '\n')
                 counter += 1
             except IndexError:
-                print('Alignment seems to go wrong at line:', counter)
+                print('Alignment seems to go wrong at at some point, this is the line it returns IndexError:', counter)
                 break
     outfile.close()
 
-def extract_features(inputfile, language_model, vectorizer = False):
+def extract_features(input_file: str, language_model: gensim.models.KeyedVectors, vectorizer = False):
+    '''
+    :param input_file: a string containing the path to the inputfile. 
+    :param language_model: The loaded w2v model
+    :param vectorizer: boolean whether you want to return the vectorizer as a third value in the tuple or not'''
     prev_token = ""
     data = []
-    tokens, gold, chapters, sent_id = fe.fileread(inputfile)
+    tokens, gold, chapters, sent_id = fe.fileread(input_file)
     feature_dict = fe.featuretraindict(tokens,gold,language_model,baseline = False, w_embedding = False)
     tokens = feature_dict['Tokens']
     lemmas = feature_dict['Lemmas']
@@ -78,14 +88,18 @@ def extract_features(inputfile, language_model, vectorizer = False):
     elif assignment == False:
         return combined_vectors, golds
     
-def create_vectorizer_traditional_features(nor_features):
-    """Subfunction for create_all_classifier"""
+def create_vectorizer_traditional_features(nor_features: list):
+    """Subfunction for create_all_classifier
+    :param nor_features: takes a list of dicts with the traditional features"""
     vectorizer = DictVectorizer()
     vectorizer.fit(nor_features)
     return vectorizer
 
 def combine_sparse_and_dense_vectors(emb_features, sparse_feature_reps):
-    """Subfunction for create_all_classifier"""
+    """Subfunction for create_all_classifier; concatenates the traditional features with 
+    embedding vectors
+    :param emb_features: w2v vectors representing the vocabulary
+    :param sparse_feature_reps: vectorized form of traditional features"""
     combined_vec = []
     sparse_vec = np.array(sparse_feature_reps.toarray())
     for index, vec in enumerate(sparse_vec):
@@ -100,7 +114,7 @@ def main(argv=None):
         
     argv = ['mypython_program','data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt','data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt','models/glove.42B.300d.txt']
     trainingfile = argv[1]
-    inputfile = argv[2]
+    input_file = argv[2]
     model = argv[3]
     
     tmp_file = 'models/temp_glove_as_word2vec.txt'
@@ -112,7 +126,7 @@ def main(argv=None):
     training_features, gold_labels, vectorizer = extract_features(trainingfile,language_model, vectorizer = False)
     for modelname in ['SVM']:
         ml_model, vec = create_classifier(training_features, gold_labels, modelname, embedded)
-        classify_data(ml_model, vectorizer, inputfile, inputfile.replace('.txt','.' + modelname + '_all_f_emb.conll'),language_model, False)
+        classify_data(ml_model, vectorizer, input_file, input_file.replace('.txt','.' + modelname + '_all_f_emb.conll'),language_model, False)
     
 if __name__ == '__main__':
     main()
