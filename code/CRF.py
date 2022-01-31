@@ -18,33 +18,16 @@ import utils
 import feature_extraction as fe
 
 
-training_data = 'data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
-dev_data = 'data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
-
-
-# Reading the files
-tr_tokens, tr_gold, tr_chapters, tr_sent_id = fe.fileread(training_data)
-te_tokens, te_gold, te_chapters, te_sent_id = fe.fileread(dev_data)
-
-## Here debug = True just means that I am not yet loading embeddings, therefore embedding_model param is empty string
-train_features = fe.featuretraindict(tr_tokens, tr_gold, '', baseline = False, w_embedding = True) # Dict
-train_baseline = fe.featuretraindict(tr_tokens, tr_gold, '', baseline = True, w_embedding = True) # Dict
-
-dev_features = fe.featuretraindict(te_tokens, te_gold, '', baseline = False, w_embedding = True) # Dict
-dev_baseline = fe.featuretraindict(te_tokens, te_gold, '', baseline = True, w_embedding = True) # Dict
-
-
-sentences = [sent for sent in zip(tr_tokens,tr_gold,tr_sent_id)]
-#print(sentences) 
-
-
-def token2features(sentences, i):
-    '''Sentences is a list of sents, i represents the index'''
-
+def token2features(sent: tuple, i: int) -> dict:
+    '''Takes a sent as input and generates featuredict for the tokens in that sent
+    :param sent: the tuple with features for each token
+    :param i: typically used to iterate over the features in sent, essentially an indexing object
+    :return: featuredict for the sent
+    '''
     neg_list = ['nor', 'neither', 'without', 'nobody', 'none', 'nothing', 'never', 'not', 'no', 'nowhere', 'non'] #Chowdhury list
 
-    tokens = [sentences[i][0] for i, sent in enumerate(sentences)]
-    gold = [sentences[i][-1] for i, sent in enumerate(sentences)]
+    tokens = [sen[i][0] for i, sen in enumerate(sent)]
+    gold = [sen[i][-1] for i, sen in enumerate(sent)]
     pos_tags = utils.POS(tokens)
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
@@ -56,19 +39,29 @@ def token2features(sentences, i):
     return features
 
 
-
-def sent2features(sent):
+def sent2features(sent: tuple) -> list:
+    '''Will get collect the features for tokens
+    :param sent: the tuple with features for each token'''
     return [token2features(sent, i) for i in range(len(sent))]
 
 def sent2labels(sent):
+    '''Will get collect the labels for tokens
+    :param sent: the tuple with features for each token'''
     #if you added features to your input file, make sure to add them here as well.
     return [gold for token,pos_tags, lemmas, neg_word, aff_neg, prev_token, next_token, gold in sent]
 
 def sent2tokens(sent):
+    '''Will get collect the features for tokens
+    :param sent: the tuple with features for each token'''
     return [token for token,pos_tags, lemmas, neg_word, aff_neg, prev_token, next_token, gold in sent]
 
 
-def extract_sents_from_conll(inputfile): # It gets 5 items from this func
+def extract_sents_from_conll(inputfile: str) -> list: 
+    '''This function extracts the features from inputfile and returns them in a format
+    suited to sklearn_CRFsuite
+    :param inputfile: The filepath
+    :return: a list in list of tuples, where the content of the tuple includes the features per token
+    and where the content of the inner list encapsulates the sentences'''
     #Extract the tokens2features and convert them to sents
     sents = [] # List of lists
     current_sent = [] # Gets added to sent 
@@ -125,8 +118,10 @@ def extract_sents_from_conll(inputfile): # It gets 5 items from this func
 
 
 
-def train_crf_model(X_train, y_train):
-
+def train_crf_model(X_train: list, y_train:list) -> sklearn_crfsuite.CRF:
+    '''Will fit the X_train parameter; the features, with the y_train parameter; the gold labels.
+    :type X_train: a list in list of tuples, where the content of the tuple includes the features per token
+    and where the content of the inner list encapsulates the sentences'''
     crf = sklearn_crfsuite.CRF(
         algorithm='lbfgs',
         c1=0.1,
@@ -139,8 +134,10 @@ def train_crf_model(X_train, y_train):
     return crf
 
 
-def create_crf_model(trainingfile):
-
+def create_crf_model(trainingfile: str) -> sklearn_crfsuite.CRF:
+    '''This function returns a trained model based on extracted features from the trainingdata
+    :param trainingfile: The file you wish to use to extract features from and train the model
+    :return: a sklearn_crfsuite.CRF object'''
     train_sents = extract_sents_from_conll(trainingfile)
     X_train = [sent2features(s) for s in train_sents]
     y_train = [sent2labels(s) for s in train_sents]
@@ -149,10 +146,10 @@ def create_crf_model(trainingfile):
     
     return crf
 
-
-
-def run_crf_model(crf, evaluationfile):
-
+def run_crf_model(crf, evaluationfile: str)-> tuple:
+    '''This function will use a trained model to make predictions and returns a tuple of predictions and test output. 
+    :param crf: a fitted model that we want to make predictions for
+    :param evaluationfile: a filepath containing a file that you wish to make predictions for'''
     test_sents = extract_sents_from_conll(evaluationfile)
     X_test = [sent2features(s) for s in test_sents]
     y_pred = crf.predict(X_test)
@@ -161,17 +158,22 @@ def run_crf_model(crf, evaluationfile):
 
 
 
-def write_out_evaluation(eval_data, pred_labels, outputfile):
-
+def write_out_evaluation(eval_data: list, pred_labels: list, outputfile: str):
+    '''This function attempts to write a file with model predictions'''
     outfile = open(outputfile, 'w')
-    
     for evalsents, predsents in zip(eval_data, pred_labels):
         for data, pred in zip(evalsents, predsents):
             outfile.write(data.get('Tokens') + "\t" + pred + "\n")
 
 
 
-def train_and_run_crf_model(trainingfile, evaluationfile, outputfile):
+def train_and_run_crf_model(trainingfile: str, evaluationfile: str, outputfile: str):
+    '''Will load the filepaths and create a crf model, fit the trainingfile, and transform the evaluationfile
+    to make predictions
+    :param trainingfile: file to fit data to
+    :param evaluationfile: file to make predictions for
+    :param outputfile: the path where you wish to store the predictions
+    :return: a tsv file'''
     crf = create_crf_model(trainingfile)
     pred_labels, eval_data = run_crf_model(crf, evaluationfile)
     write_out_evaluation(eval_data, pred_labels, outputfile)
@@ -179,8 +181,10 @@ def train_and_run_crf_model(trainingfile, evaluationfile, outputfile):
 
 
 def main():
-
-    args = ['my_python','data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt','data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt','data/results_crf.conll']
+    training_data = 'data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
+    dev_data = 'data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
+    outputfile = 'data/results_crf.conll'
+    args = ['my_python',training_data,dev_data,outputfile]
     trainingfile = args[1]
     evaluationfile = args[2]
     outputfile = args[3]
@@ -189,5 +193,6 @@ def main():
     
 
 if __name__ == '__main__':
+    
     main()
 
