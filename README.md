@@ -27,6 +27,8 @@ Development Data:
 Training Data:
 * `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
 
+Additionally, to save the output of the classifiers a folder called 'data' is necessary.
+
 ### Prerequisites 
 The requirements to run the provided code can be found in [**requirements.txt**](https://github.com/surferfelix/ATT_TM_Group_1/blob/main/requirements.txt).
 
