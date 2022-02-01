@@ -15,8 +15,5 @@ pip install csv
 # Version needs to be under 0.24
 pip install sklearn<0.24
 
-For the word embeddings a folder called 'models' is necessary. Put a GloVe embedding model in that directory. This will create a w2v file which the system can open and use. 
 Model used in this project: Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB download) download here: https://nlp.stanford.edu/projects/glove/
 Latest versions (current date 29-01-2022)
-
-To save the output of the classifiers a folder called 'data' is necessary. 
