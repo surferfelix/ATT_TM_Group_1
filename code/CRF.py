@@ -181,7 +181,7 @@ def train_and_run_crf_model(trainingfile: str, evaluationfile: str, outputfile: 
 
 def main():
     training_data = '../data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
-    dev_data = '../data/combined_test_set.txt' # Can also be test set
+    dev_data = '../data/combined_test_data.txt' # Can also be test set
     outputfile = '../data/results_crf.conll'
     args = ['my_python',training_data,dev_data,outputfile]
     trainingfile = args[1]
