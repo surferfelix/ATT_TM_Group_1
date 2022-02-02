@@ -5,8 +5,8 @@ import sys
 import csv
 from nltk.stem import WordNetLemmatizer 
 
-get_ipython().system("pip install 'sklearn<0.24'")
-get_ipython().system("pip install 'sklearn_crfsuite<0.24'")
+# get_ipython().system("pip install 'sklearn<0.24'")
+# get_ipython().system("pip install 'sklearn_crfsuite<0.24'")
 
 
 ## import CRF 
@@ -26,8 +26,8 @@ def token2features(sent: tuple, i: int) -> dict:
     '''
     neg_list = ['nor', 'neither', 'without', 'nobody', 'none', 'nothing', 'never', 'not', 'no', 'nowhere', 'non'] #Chowdhury list
 
-    tokens = [sen[i][0] for i, sen in enumerate(sent)]
-    gold = [sen[i][-1] for i, sen in enumerate(sent)]
+    tokens = [sent[i][0] for i, sen in enumerate(sent)]
+    gold = [sent[i][-1] for i, sen in enumerate(sent)]
     pos_tags = utils.POS(tokens)
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
@@ -179,11 +179,10 @@ def train_and_run_crf_model(trainingfile: str, evaluationfile: str, outputfile: 
     write_out_evaluation(eval_data, pred_labels, outputfile)
 
 
-
 def main():
-    training_data = 'data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
-    dev_data = 'data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
-    outputfile = 'data/results_crf.conll'
+    training_data = '../data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
+    dev_data = '../data/combined_test_set.txt' # Can also be test set
+    outputfile = '../data/results_crf.conll'
     args = ['my_python',training_data,dev_data,outputfile]
     trainingfile = args[1]
     evaluationfile = args[2]
