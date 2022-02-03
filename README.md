@@ -27,6 +27,10 @@ Development Data:
 Training Data:
 * `SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt`
 
+Test Data:
+combined out of "SEM-2012-SharedTask-CD-SCO-test-cardboard.txt" and "SEM-2012-SharedTask-CD-SCO-test-circle.txt" into
+* `combined_test_data.txt`
+
 Additionally, to save the output of the classifiers a folder called 'data' is necessary.
 
 ### Prerequisites 
