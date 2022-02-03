@@ -48,6 +48,7 @@ The folder [**code**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/co
 * `CRF.py` This script trains CRF classifier and creates tsv with token and predicted label.
 * `SVM_Emb.py` This script trains SVM classifier with all features and includes word embeddings. It creates tsv with token and predicted label. This script can also be used for Feature ablation study.
 * `evaluation_notebook.ipynb` The notebook extracts all basic evaluation results for both classifiers in all cases. 
+* `error_detection.py` This script contains functions to perform a label comparison between gold and prediction and create a tsv file with discrepancies.
 
 ### Results
 The folder [**results**](https://github.com/surferfelix/ATT_TM_Group_1/tree/main/results) consists of the output files of the feature ablation with the classifier SVM and the results of the classifier CRF with all features. 
