@@ -5,8 +5,9 @@ import sys
 import csv
 from nltk.stem import WordNetLemmatizer 
 
-get_ipython().system("pip install 'sklearn<0.24'")
-get_ipython().system("pip install 'sklearn_crfsuite<0.24'")
+# Make sure that you have these dependencies installed 
+# get_ipython().system("pip install 'sklearn<0.24'")
+# get_ipython().system("pip install 'sklearn_crfsuite<0.24'")
 
 
 ## import CRF 
@@ -18,16 +19,18 @@ import utils
 import feature_extraction as fe
 
 
-def token2features(sent: tuple, i: int) -> dict:
+def token2features(sent: tuple, i: int, golds = False) -> dict:
     '''Takes a sent as input and generates featuredict for the tokens in that sent
     :param sent: the tuple with features for each token
     :param i: typically used to iterate over the features in sent, essentially an indexing object
+    :gold: When setting to true, will return the gold labels as second part of the tuple
     :return: featuredict for the sent
     '''
     neg_list = ['nor', 'neither', 'without', 'nobody', 'none', 'nothing', 'never', 'not', 'no', 'nowhere', 'non'] #Chowdhury list
 
-    tokens = [sen[i][0] for i, sen in enumerate(sent)]
-    gold = [sen[i][-1] for i, sen in enumerate(sent)]
+    tokens = [sent[i][0] for i, sen in enumerate(sent)]
+    #print(tokens)  # sen[i][0]
+    gold = [sent[i][-1] for i, sen in enumerate(sent)]
     pos_tags = utils.POS(tokens)
     lemmas = utils.lemma_extraction(tokens, pos_tags)
     neg_word = utils.neg_word(tokens, neg_list)
@@ -35,9 +38,8 @@ def token2features(sent: tuple, i: int) -> dict:
     prev_token, next_token = utils.prev_next_tokens(tokens)
     features = {"Tokens": tokens[i], "Lemmas": lemmas[i], "POS": pos_tags[i], "Neg_Word": neg_word[i], "Affixal_Neg": aff_neg[i], "Prev_Token": prev_token[i], "Next_Token": next_token[i]}
     baseline = {"Tokens": tokens[i]}
-        
     return features
-
+        
 
 def sent2features(sent: tuple) -> list:
     '''Will get collect the features for tokens
@@ -146,24 +148,26 @@ def create_crf_model(trainingfile: str) -> sklearn_crfsuite.CRF:
     
     return crf
 
-def run_crf_model(crf, evaluationfile: str)-> tuple:
+def run_crf_model(crf, evaluationfile: str, golds = False)-> tuple:
     '''This function will use a trained model to make predictions and returns a tuple of predictions and test output. 
     :param crf: a fitted model that we want to make predictions for
     :param evaluationfile: a filepath containing a file that you wish to make predictions for'''
     test_sents = extract_sents_from_conll(evaluationfile)
     X_test = [sent2features(s) for s in test_sents]
+    gold = [sent2labels(s) for s in test_sents]
     y_pred = crf.predict(X_test)
-    
-    return y_pred, X_test
+    if golds == True:
+        return y_pred, X_test, gold
 
 
 
-def write_out_evaluation(eval_data: list, pred_labels: list, outputfile: str):
+def write_out_evaluation(eval_data: list, pred_labels: list, outputfile: str, golds: list):
     '''This function attempts to write a file with model predictions'''
     outfile = open(outputfile, 'w')
+
     for evalsents, predsents in zip(eval_data, pred_labels):
-        for data, pred in zip(evalsents, predsents):
-            outfile.write(data.get('Tokens') + "\t" + pred + "\n")
+        for index, (data, pred) in enumerate(zip(evalsents, predsents)):
+            outfile.write(data.get('Tokens') + "\t" + golds[index] + '\t' + pred + "\n")
 
 
 
@@ -175,15 +179,18 @@ def train_and_run_crf_model(trainingfile: str, evaluationfile: str, outputfile: 
     :param outputfile: the path where you wish to store the predictions
     :return: a tsv file'''
     crf = create_crf_model(trainingfile)
-    pred_labels, eval_data = run_crf_model(crf, evaluationfile)
-    write_out_evaluation(eval_data, pred_labels, outputfile)
-
+    pred_labels, eval_data, golds = run_crf_model(crf, evaluationfile, golds = True)
+    labels = [] # Converting them into a normal list for filewrite
+    for lst in golds:
+        for label in lst:
+            labels.append(label)
+    write_out_evaluation(eval_data, pred_labels, outputfile, labels)
 
 
 def main():
-    training_data = 'data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
-    dev_data = 'data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
-    outputfile = 'data/results_crf.conll'
+    training_data = '../data/SEM-2012-SharedTask-CD-SCO-training-simple.v2.txt'
+    dev_data = '../data/SEM-2012-SharedTask-CD-SCO-dev-simple.txt' # Remove /content/ when merging to py file
+    outputfile = '../data/results_crf.conll'
     args = ['my_python',training_data,dev_data,outputfile]
     trainingfile = args[1]
     evaluationfile = args[2]
@@ -193,6 +200,4 @@ def main():
     
 
 if __name__ == '__main__':
-    
     main()
-

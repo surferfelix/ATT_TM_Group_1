@@ -67,7 +67,7 @@ def extract_features(input_file: str, language_model: gensim.models.KeyedVectors
     aff_negs = feature_dict['Affixal_Neg']
     word_bigrams = feature_dict['Word_bigrams']
     prev_tokens = feature_dict['Prev_Token']
-    next_tokens = feature_dict['Next_Token']\
+    next_tokens = feature_dict['Next_Token']
         
     golds = gold.tolist()
     
