@@ -1,0 +1,19 @@
+Requirements
+
+Python
+This research was done with Python 3.8. For reproducing the study we recommend using a similar version. 
+
+Python modules
+pip install pandas
+pip install numpy
+pip install nltk
+pip install argparse
+pip install os
+pip install gensim
+pip install sys
+pip install csv
+# Version needs to be under 0.24
+pip install sklearn<0.24
+
+Model used in this project: Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB download) download here: https://nlp.stanford.edu/projects/glove/
+Latest versions (current date 29-01-2022)
